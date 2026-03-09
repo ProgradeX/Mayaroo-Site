@@ -1,0 +1,38 @@
+// section-5__info css
+
+.section-5__info {
+    margin-bottom: 65px;
+    @media #{$sm} {
+        margin-bottom: 40px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 128px;
+        line-height: 128px;
+        letter-spacing: -0.05em;
+        background: linear-gradient(178.38deg, #111111 1.38%, #FFFFFF 93.92%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        @media #{$md} {
+            font-size: 107px;
+            line-height: 105px;
+        }
+        @media #{$sm} {
+            font-size: 81px;
+            line-height: 94px;
+        }
+        @media #{$xs} {
+            font-size: 48px;
+            line-height: 54px;
+        }
+        @include dark {
+            background: linear-gradient(178.38deg, #AEAEAE 1.38%, #111111 93.92%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}

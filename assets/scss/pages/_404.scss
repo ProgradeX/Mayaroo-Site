@@ -1,0 +1,111 @@
+.error-area {
+    &-inner {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .section-content {
+            .subtitle-wrapper {
+                .section-subtitle {
+                    font-weight: 400;
+                    font-size: 300px;
+                    line-height: 14px;
+                    letter-spacing: -0.05em;
+                    color: var(--primary);
+                    font-family: var(--font_BDOGrotesk);
+
+                    @media #{$xxl} {
+                        font-size: 240px;
+                    }
+
+                    @media #{$xl} {
+                        font-size: 180px;
+                    }
+
+                    @media #{$lg} {
+                        font-size: 140px;
+                    }
+
+                    @media #{$md} {
+                        font-size: 120px;
+                    }
+                }
+            }
+
+            .title-wrapper {
+                .section-title {
+                    font-weight: 400;
+                    font-size: 90px;
+                    line-height: 85px;
+                    letter-spacing: -0.05em;
+                    color: var(--primary);
+                }
+            }
+            .rr-btn{
+                padding: 25px 57.3px;
+                @include dark {
+                    background: #ffffff;
+                }
+                .text-one{
+                    @include dark {
+                        color: var(--dark);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .section-title {
+        max-width: 740px;
+
+        @media #{$xxl} {
+            max-width: 640px;
+        }
+
+        @media #{$xl} {
+            max-width: 540px;
+        }
+
+        @media #{$lg} {
+            max-width: 440px;
+        }
+
+        @media #{$md} {
+            max-width: 340px;
+        }
+    }
+
+    .section-content {
+        align-self: center;
+
+        .title-wrapper {
+            margin-top: 20px;
+            @media #{$lg} {
+                margin-top: 17px;
+
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: 75px;
+
+            @media #{$xxl} {
+                margin-top: 44px;
+
+            }
+
+            @media #{$lg} {
+                margin-top: 34px;
+
+            }
+
+            @media #{$md} {
+                margin-top: 24px;
+
+            }
+        }
+    }
+}

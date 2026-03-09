@@ -1,0 +1,24 @@
+/* animation css */
+
+.t_parallax_image {
+  overflow: hidden;
+}
+
+.spin{
+	animation-name: spin;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+// Animate spin
+@keyframes spin {
+  0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
+  }
+
+  100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg)
+  }
+}

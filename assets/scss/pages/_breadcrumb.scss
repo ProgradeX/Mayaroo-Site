@@ -1,0 +1,242 @@
+// breadcrumb-section css
+
+.breadcrumb-section {
+    &__wrapper {
+        padding-top: 190px;
+        padding-bottom: 65px;
+
+        @media #{$xl} {
+            padding-top: 150px;
+        }
+
+        @media #{$lg} {
+            padding-top: 120px;
+        }
+
+        @media #{$sm} {
+            padding-top: 100px;
+        }
+    }
+
+    &__sub-heading {
+        border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+        padding-bottom: 8px;
+        margin-bottom: 50px;
+        @include dark {
+            border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
+        }
+
+        @media #{$xs} {
+            margin-bottom: 35px;
+        }
+
+        .sub-title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            color: #FF6A3A;
+            font-family: var(--font_body);
+        }
+    }
+
+    &__info {
+        .title {
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 85px;
+            letter-spacing: -0.05em;
+            color: var(--primary);
+            font-family: var(--font_BDOGrotesk);
+
+            @media #{$lg} {
+                font-size: 64px;
+                line-height: 70px;
+            }
+
+            @media #{$md} {
+                & br {
+                    display: none;
+                }
+            }
+
+            @media #{$sm} {
+                font-size: 55px;
+                line-height: 60px;
+            }
+
+            @media #{$xs} {
+                font-size: 37px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    &__content {
+        margin-left: 15px;
+
+        @media #{$md} {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+
+        .decs {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: rgba(17, 17, 17, 0.5);
+            margin-bottom: 43px;
+
+            @include dark {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            @media #{$xxl} {
+                & br {
+                    display: none;
+                }
+            }
+
+            @media #{$md} {
+                margin-bottom: 30px;
+            }
+        }
+
+        .breadcrumb-btn {
+            position: relative;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            color: var(--primary);
+            font-family: var(--font_body);
+
+            &::before {
+                width: 100%;
+                height: 1px;
+                background-color: currentColor;
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all 0.5s;
+                color: var(--primary);
+            }
+
+            &:hover {
+                @include dark {
+                    color: var(--white);
+                }
+
+                &::before {
+                    width: 0%;
+                }
+            }
+
+        }
+    }
+}
+
+// breadcrumb-2 css
+
+.breadcrumb-2 {
+    &__wrapper {
+        padding-top: 190px;
+        padding-bottom: 145px;
+
+        @media #{$xl} {
+            padding-top: 150px;
+            padding-bottom: 120px;
+        }
+
+        @media #{$lg} {
+            padding-top: 120px;
+            padding-bottom: 100px;
+
+        }
+
+        @media #{$sm} {
+            padding-top: 100px;
+            padding-bottom: 80px;
+        }
+
+        .sub-heading {
+            border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+            padding-bottom: 8px;
+            margin-bottom: 40px;
+            @include dark {
+                border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
+            }
+
+            @media #{$xs} {
+                margin-bottom: 35px;
+            }
+
+            .sub-title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 38px;
+                letter-spacing: -0.02em;
+                color: #FF6A3A;
+                font-family: var(--font_body);
+            }
+        }
+    }
+
+    &__content-box {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media #{$xs} {
+            gap: 20px;
+        }
+
+        .content {
+            .decs {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                color: #555555;
+                margin-top: 4px;
+                @include dark {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                @media #{$md} {
+                    & br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__heading {
+        .title {
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 85px;
+            letter-spacing: -0.05em;
+            color: var(--primary);
+
+            @media #{$lg} {
+                font-size: 70px;
+                line-height: 70px;
+            }
+
+            @media #{$md} {
+                & br {
+                    display: none;
+                }
+            }
+
+            @media #{$xs} {
+                font-size: 42px;
+                line-height: 46px;
+            }
+
+        }
+    }
+}
