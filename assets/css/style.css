@@ -6949,6 +6949,11 @@ section {
   border-radius: 15px;
   padding: 45px 50px;
 }
+.hero-section-3__card-2 { /* new */
+  background: #F1F1F1;;
+  border-radius: 15px;
+  padding: 45px 50px;
+}
 @media only screen and (max-width: 1199px) {
   .hero-section-3__card {
     padding: 45px 15px;
@@ -6960,6 +6965,14 @@ section {
   line-height: 33px;
   letter-spacing: -0.05em;
   color: #FFFFFF;
+  margin-bottom: 200px;
+}
+.hero-section-3__card-2 .title { /* new */
+  font-weight: 400;
+  font-size: 33.7979px;
+  line-height: 33px;
+  letter-spacing: -0.05em;
+  color: #000000;
   margin-bottom: 200px;
 }
 @media only screen and (max-width: 991px) {
@@ -6985,6 +6998,13 @@ section {
   line-height: 28px;
   letter-spacing: -0.01em;
   color: #FFFFFF;
+}
+.hero-section-3__card-2 .text { /* new */
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #000000;
 }
 @media only screen and (max-width: 1399px) {
   .hero-section-3__card .text br {
