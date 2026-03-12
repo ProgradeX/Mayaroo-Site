@@ -16256,16 +16256,29 @@ section {
   grid-template-columns: 500px 600px 1fr; /* modified */
   gap: 20px;
 }
+.testimonial-section-5__item-box-2 {
+  display: grid;
+  /* grid-template-columns: 398px 519px 1fr; */
+  grid-template-columns: 800px 1fr; /* modified */
+  gap: 20px;
+}
 /* Scale up breakpoint to account for wider base columns */
 @media only screen and (max-width: 1599px) {
   .testimonial-section-5__item-box {
     grid-template-columns: 460px 480px 1fr;
+  }
+  .testimonial-section-5__item-box-2 {
+    grid-template-columns: 660px 1fr;
   }
 }
 @media only screen and (max-width: 1399px) {
   .testimonial-section-5__item-box {
     /* grid-template-columns: 370px 402px 1fr; */  /* modified */
     grid-template-columns: 340px 1fr 1fr;
+    gap: 15px;
+  }
+  .testimonial-section-5__item-box-2 {
+    grid-template-columns: 50% 1fr;
     gap: 15px;
   }
 }
@@ -16276,9 +16289,14 @@ section {
     grid-template-columns: 460px 1fr;
     gap: 10px;
   }
+  .testimonial-section-5__item-box-2 {
+    grid-template-columns: 50% 1fr;
+    gap: 10px;
+  }
 }
 @media only screen and (max-width: 991px) {
-  .testimonial-section-5__item-box {
+  .testimonial-section-5__item-box,
+  .testimonial-section-5__item-box-2 {
     /* grid-template-columns: 370px 1fr;
     gap: 10px; */  /* modified */
     grid-template-columns: 1fr;
@@ -16286,7 +16304,8 @@ section {
   }
 }
 @media only screen and (max-width: 767px) {
-  .testimonial-section-5__item-box {
+  .testimonial-section-5__item-box,
+  .testimonial-section-5__item-box-2 {
     grid-template-columns: 1fr;
     gap: 15px;
   }
@@ -16396,13 +16415,16 @@ section {
   justify-content: center;
   border-radius: 50%;
 }
-.testimonial-section-5__item-box .card-1 .content {
+.testimonial-section-5__item-box .card-1 .content,
+.testimonial-section-5__item-box-2 .card-1 .content {
   margin-bottom: 65px;
 }
-.testimonial-section-5__item-box .card-2 {
+.testimonial-section-5__item-box .card-2,
+.testimonial-section-5__item-box-2 .card-2 {
   background: #FF6A3A;
 }
-.testimonial-section-5__item-box .card-2 .icon {
+.testimonial-section-5__item-box .card-2 .icon,
+.testimonial-section-5__item-box-2 .card-2 .icon {
   background: #111111;
 }
 
