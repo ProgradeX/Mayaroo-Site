@@ -14665,13 +14665,21 @@ section {
   justify-content: flex-end;
   grid-template-columns: 792px;
 }
+.hero-area-service-details .section-header-automation {
+  display: grid;
+  margin-top: -42px;
+  justify-content: flex-end;
+  grid-template-columns: 850px;
+}
 @media only screen and (max-width: 991px) {
-  .hero-area-service-details .section-header {
+  .hero-area-service-details .section-header,
+  .hero-area-service-details .section-header-automation {
     margin-top: 30px;
     grid-template-columns: 1fr;
   }
 }
-.hero-area-service-details .section-header .title-wrapper .section-title {
+.hero-area-service-details .section-header .title-wrapper .section-title,
+.hero-area-service-details .section-header-automation .title-wrapper .section-title {
   font-weight: 400;
   font-size: 90px;
   line-height: 85px;
@@ -14679,26 +14687,30 @@ section {
   color: var(--primary);
 }
 @media only screen and (max-width: 1199px) {
-  .hero-area-service-details .section-header .title-wrapper .section-title {
+  .hero-area-service-details .section-header .title-wrapper .section-title,
+  .hero-area-service-details .section-header-automation .title-wrapper .section-title {
     font-size: 70px;
     line-height: 80px;
     letter-spacing: 0;
   }
 }
 @media only screen and (max-width: 991px) {
-  .hero-area-service-details .section-header .title-wrapper .section-title {
+  .hero-area-service-details .section-header .title-wrapper .section-title,
+  .hero-area-service-details .section-header-automation .title-wrapper .section-title {
     font-size: 60px;
     line-height: 70px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .hero-area-service-details .section-header .title-wrapper .section-title {
+  .hero-area-service-details .section-header .title-wrapper .section-title,
+  .hero-area-service-details .section-header-automation .title-wrapper .section-title {
     font-size: 50px;
     line-height: 60px;
   }
 }
 @media (max-width: 575px) {
-  .hero-area-service-details .section-header .title-wrapper .section-title {
+  .hero-area-service-details .section-header .title-wrapper .section-title,
+  .hero-area-service-details .section-header-automation .title-wrapper .section-title {
     font-size: 40px;
     line-height: 50px;
   }
