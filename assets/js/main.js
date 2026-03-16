@@ -8,7 +8,7 @@
   "use strict";
 
   // Text Invert With Scroll 
-  const split = new SplitText(".text-invertt", {
+  const split = new SplitText(".text-invert", {
     type: "lines"
   });
   split.lines.forEach((target) => {
@@ -667,6 +667,7 @@
   });
 
 
+  ScrollTrigger.refresh();
 })(jQuery);
 
 
