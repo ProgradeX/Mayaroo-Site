@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           local-dir: ./               # Root of your repo
           server-dir: /public_html/
-          protocol: ftps
+          protocol: ftp
           port: 21
 
           
