@@ -7767,7 +7767,7 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .hero-section-4__info .title {
-    font-size: 128px;
+    font-size: 110px; /* reduce from 128px to 110px */
     line-height: 128px;
   }
 }
@@ -15408,7 +15408,7 @@ section {
 }
 .brand-section-2__info .decs {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 32px; /*changed from 20px to 32px*/
   line-height: 28px;
   color: var(--primary);
   font-family: var(--font_body);
@@ -15468,8 +15468,8 @@ section {
 }
 .brand-section-4__info .decs {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 32px; /*change from 16px to 32px*/
+  line-height: 32px; /*change from 20px to 32px*/
   letter-spacing: -0.05em;
   color: #FFFFFF;
   font-family: var(--font_body);
