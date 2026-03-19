@@ -5824,10 +5824,12 @@ section {
 .dark .about-section-2__wrapper .item-3 .about-section-2__card .decs {
   color: #111111;
 }
-.about-section-2__wrapper .item-3 .about-section-2__card .odometer {
+.about-section-2__wrapper .item-3 .about-section-2__card .odometer,
+.about-section-2__wrapper .item-3 .about-section-2__card .odometer-label {
   color: var(--primary);
 }
-.dark .about-section-2__wrapper .item-3 .about-section-2__card .odometer {
+.dark .about-section-2__wrapper .item-3 .about-section-2__card .odometer,
+.dark .about-section-2__wrapper .item-3 .about-section-2__card .odometer-label {
   color: #111111;
 }
 .about-section-2__card {
@@ -5860,7 +5862,8 @@ section {
   position: absolute;
   bottom: -9%;
 }
-.about-section-2__card .odometer {
+.about-section-2__card .odometer,
+.about-section-2__card .odometer-label {
   font-family: var(--font_BDOGrotesk);
   font-weight: 400;
   font-size: 110px;
@@ -5870,7 +5873,8 @@ section {
   margin-right: 10px;
 }
 @media only screen and (max-width: 1399px) {
-  .about-section-2__card .odometer {
+  .about-section-2__card .odometer,
+  .about-section-2__card .odometer-label {
     font-size: 87px;
     line-height: 1;
   }
@@ -14666,20 +14670,20 @@ section {
 .hero-area-service-details .section-header {
   display: grid;
   margin-top: -42px;
-  justify-content: flex-end;
-  grid-template-columns: 792px;
+  justify-content: flex-start; /* change flex-end to flex-start */
+  /* grid-template-columns: 792px; */
 }
 .hero-area-service-details .section-header-automation {
   display: grid;
   margin-top: -42px;
-  justify-content: flex-end;
-  grid-template-columns: 850px;
+  justify-content: flex-start; /* change flex-end to flex-start */
+  /* grid-template-columns: 850px; */
 }
 @media only screen and (max-width: 991px) {
   .hero-area-service-details .section-header,
   .hero-area-service-details .section-header-automation {
     margin-top: 30px;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 }
 .hero-area-service-details .section-header .title-wrapper .section-title,
@@ -16731,7 +16735,7 @@ section {
 }
 .breadcrumb-section__info .title {
   font-weight: 400;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 85px;
   letter-spacing: -0.05em;
   color: var(--primary);
