@@ -5850,8 +5850,11 @@ section {
   margin-bottom: 44px;
 }
 .about-section-2__card h2 {
+  /* display: flex;
+  align-items: flex-end; */
   position: relative;
   margin-left: -13px;
+  /* line-height: 1; */
 }
 .about-section-2__card h2 .plus {
   font-weight: 400;
@@ -5862,20 +5865,39 @@ section {
   position: absolute;
   bottom: -9%;
 }
+.about-section-2__card h2 .plus-inverted {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100px;
+  letter-spacing: -0.05em;
+  color: #000000;
+  position: absolute;
+  bottom: -9%;
+}
 .about-section-2__card .odometer,
 .about-section-2__card .odometer-label {
   font-family: var(--font_BDOGrotesk);
   font-weight: 400;
-  font-size: 110px;
+  /* font-size: 110px; moved below */
+  /* vertical-align: bottom; */
   line-height: 1;
   letter-spacing: -0.05em;
   color: #FFFFFF;
   margin-right: 10px;
 }
+.about-section-2__card .odometer {
+  font-size: 100px;
+}
+.about-section-2__card .odometer-label {
+  font-size: 50px;
+}
 @media only screen and (max-width: 1399px) {
-  .about-section-2__card .odometer,
-  .about-section-2__card .odometer-label {
+  .about-section-2__card .odometer {
     font-size: 87px;
+    line-height: 1;
+  }
+  .about-section-2__card .odometer-label {
+    font-size: 40px;
     line-height: 1;
   }
 }
