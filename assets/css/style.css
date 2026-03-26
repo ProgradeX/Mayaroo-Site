@@ -17995,3 +17995,28 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Add to your stylesheet */
+.team-section-2 .industry-slider .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.team-section-2 .industry-slider {
+  overflow: hidden;
+}
+
+/* Give each slide a fixed width on desktop so the distance is predictable */
+@media (min-width: 1200px) {
+  .team-section-2 .industry-slider .swiper-slide {
+    width: 320px;
+    margin: 10px;
+    flex-shrink: 0;
+  }
+  .team-section-2.section-space {
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+
+}
