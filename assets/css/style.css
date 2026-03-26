@@ -7801,6 +7801,12 @@ section {
     line-height: 128px;
   }
 }
+@media only screen and (max-width: 1500px) { /* add new breakpoint */
+  .hero-section-4__info .title {
+    font-size: 100px;
+    line-height: 128px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .hero-section-4__info .title {
     font-size: 95px;
