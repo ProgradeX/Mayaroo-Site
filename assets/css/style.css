@@ -5663,7 +5663,7 @@ section {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px; /* 16px > 20px */
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -5714,7 +5714,7 @@ section {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px; /* 16px > 20px */
   line-height: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -5768,7 +5768,7 @@ section {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px; /* 16px > 20px */
   line-height: 16px;
   text-transform: uppercase;
   color: var(--primary);
@@ -5834,7 +5834,7 @@ section {
 }
 .about-section-2__card {
   background: #1A1A1A;
-  padding: 47px 50px 31px 50px;
+  padding: 50px 50px 40px 50px; /* 47px 50px 31px 50px > 50px 50px 40px 50px */
   border-radius: 20px;
 }
 @media only screen and (max-width: 767px) {
