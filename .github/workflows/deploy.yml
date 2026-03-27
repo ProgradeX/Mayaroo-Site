@@ -1,10 +1,14 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy to cPanel
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+
+# ======= uncomment below to continue build to prod - start
+# name: Deploy to cPanel
+
+# on:
+#   # Runs on pushes targeting the default branch
+#   push:
+#     branches: ["main"]
+# ======= uncomment below to continue build to prod - end
 
   # Allows you to run this workflow manually from the Actions tab
   # workflow_dispatch:
@@ -21,26 +25,28 @@ on:
 #   group: "pages"
 #   cancel-in-progress: false
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# ======= uncomment below to continue build to prod - start
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-    #pull repo code to the VM
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#     #pull repo code to the VM
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
 
-    #upload files to your cPanel server via FTP
-      - name: deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: ./               # Root of your repo
-          server-dir: /public_html/
-          protocol: ftp
-          port: 21
+#     #upload files to your cPanel server via FTP
+#       - name: deploy via FTP
+#         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#         with:
+#           server: ${{ secrets.FTP_HOST }}
+#           username: ${{ secrets.FTP_USER }}
+#           password: ${{ secrets.FTP_PASS }}
+#           local-dir: ./
+#           server-dir: /public_html/
+#           protocol: ftp
+#           port: 21
+# ======= uncomment below to continue build to prod - end
 
       # - name: deploy via SFTP
       #   uses: burnett01/rsync-deployments@7.0.1

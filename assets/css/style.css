@@ -994,58 +994,58 @@ section {
 }
 
 .section-space {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 100px; /* 140px > 100px */
+  padding-bottom: 100px; /* 140px > 100px */
 }
 @media only screen and (max-width: 1199px) {
   .section-space {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 90px; /* 110px > 90px */
+    padding-bottom: 90px; /* 110px > 90px */
   }
 }
 @media only screen and (max-width: 991px) {
   .section-space {
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: 60px; /* 70px > 60px */
+    padding-bottom: 65px; /* 80px > 65px */
   }
 }
 @media only screen and (max-width: 767px), (max-width: 575px) {
   .section-space {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 40px; /* 60px > 40px */
+    padding-bottom: 50px; /* 65px > 50px */
   }
 }
 
 .section-space-top {
-  padding-top: 140px;
+  padding-top: 100px; /* 140px > 100px */
 }
 @media only screen and (max-width: 1199px) {
   .section-space-top {
-    padding-top: 110px;
+    padding-top: 90px; /* 110px > 90px */
   }
 }
 @media only screen and (max-width: 991px) {
   .section-space-top {
-    padding-top: 70px;
+    padding-top: 60px; /* 70px > 60px */
   }
 }
 @media only screen and (max-width: 767px), (max-width: 575px) {
   .section-space-top {
-    padding-top: 60px;
+    padding-top: 40px; /* 60px > 40px */
   }
 }
 
 .section-space-bottom {
-  padding-bottom: 140px;
+  padding-bottom: 100px; /* 140px > 100px */
 }
 @media only screen and (max-width: 991px) {
   .section-space-bottom {
-    padding-bottom: 70px;
+    padding-bottom: 70px; /* 110px > 90px */
   }
 }
 @media only screen and (max-width: 767px), (max-width: 575px) {
   .section-space-bottom {
-    padding-bottom: 60px;
+    padding-top: 40px; /* 60px > 40px */
   }
 }
 
@@ -5967,12 +5967,12 @@ section {
   padding: 26px 44px;
 }
 .about-section-4__btn .rr-btn .text-one {
-  font-weight: 500;
+  /* font-weight: 500;
   font-size: 18px;
   line-height: 18px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02em; */
   color: var(--primary);
-  font-family: var(--font_body);
+  /* font-family: var(--font_body); */
 }
 
 .about-section-5__wrapper {
@@ -8227,7 +8227,7 @@ section {
   display: flex;
   gap: 230px;
   flex-wrap: wrap;
-  margin-bottom: 55px;
+  margin-bottom: 40px; /* 55px > 40px */
 }
 @media only screen and (max-width: 1399px) {
   .section-2-info {
