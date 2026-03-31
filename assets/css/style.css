@@ -5922,8 +5922,8 @@ section {
 }
 .about-section-4__content .title {
   font-weight: 400;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 50px; /*64px > 50px*/
+  line-height: 65px; /*75px > 65px*/
   letter-spacing: -0.05em;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -5937,14 +5937,14 @@ section {
 }
 @media only screen and (max-width: 1399px) {
   .about-section-4__content .title {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px; /*50px > 40px*/
+    line-height: 55px; /*60px > 55px*/
   }
 }
 @media only screen and (max-width: 1199px) {
   .about-section-4__content .title {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 30px; /*50px > 30px*/
+    line-height: 45px; /*60px > 45px*/
   }
   .about-section-4__content .title br {
     display: none;
@@ -5952,14 +5952,14 @@ section {
 }
 @media only screen and (max-width: 767px) {
   .about-section-4__content .title {
-    font-size: 43px;
-    line-height: 46px;
+    font-size: 25px; /*43px > 25px*/
+    line-height: 40px; /*46px > 40px*/
   }
 }
 @media (max-width: 575px) {
   .about-section-4__content .title {
-    font-size: 31px;
-    line-height: 34px;
+    font-size: 31px; /*31px > 22px*/
+    line-height: 34px; /*34px > 30px*/
   }
 }
 .about-section-4__btn .rr-btn {
@@ -8227,7 +8227,7 @@ section {
   display: flex;
   gap: 230px;
   flex-wrap: wrap;
-  margin-bottom: 40px; /* 55px > 40px */
+  margin-bottom: 15px; /* 55px > 15px */
 }
 @media only screen and (max-width: 1399px) {
   .section-2-info {
@@ -16805,7 +16805,7 @@ section {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(17, 17, 17, 0.5);
+  color: rgba(17, 17, 17, 1);
   margin-bottom: 43px;
 }
 .dark .breadcrumb-section__content .decs {
