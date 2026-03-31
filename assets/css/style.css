@@ -1023,10 +1023,16 @@ section {
   .section-space-top {
     padding-top: 90px; /* 110px > 90px */
   }
+  .c-padding {
+    padding-top: 90px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .section-space-top {
     padding-top: 60px; /* 70px > 60px */
+  }
+  .c-padding {
+    padding-top: 0px;
   }
 }
 @media only screen and (max-width: 767px), (max-width: 575px) {
@@ -8225,23 +8231,23 @@ section {
 
 .section-2-info {
   display: flex;
-  gap: 230px;
+  gap: 140px; /*230 > 140*/
   flex-wrap: wrap;
   margin-bottom: 15px; /* 55px > 15px */
 }
 @media only screen and (max-width: 1399px) {
   .section-2-info {
-    gap: 140px;
+    gap: 100px; /*140 > 100*/
   }
 }
 @media only screen and (max-width: 1199px) {
   .section-2-info {
-    gap: 120px;
+    gap: 50px; /*120 > 50*/
   }
 }
 @media only screen and (max-width: 991px) {
   .section-2-info {
-    gap: 70px;
+    gap: 50px; /*70 > 50*/
   }
 }
 @media only screen and (max-width: 767px) {
@@ -8262,7 +8268,7 @@ section {
 }
 .section-2-info .title {
   font-weight: 400;
-  font-size: 96px;
+  font-size: 96px; /*96 > 80*/
   line-height: 106px;
   letter-spacing: -0.05em;
   color: var(--primary);
@@ -8270,32 +8276,32 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .section-2-info .title {
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 75px; /*80 > 75*/
+    line-height: 80px; /*95 > 80*/
   }
 }
 @media only screen and (max-width: 1399px) {
   .section-2-info .title {
-    font-size: 70px;
-    line-height: 77px;
+    font-size: 62px; /*70 > 62*/
+    line-height: 68px; /*77 > 68*/
   }
 }
 @media only screen and (max-width: 1199px) {
   .section-2-info .title {
-    font-size: 57px;
-    line-height: 64px;
+    font-size: 57px; /*57 > 45*/
+    line-height: 64px; /*64 > 50*/
   }
 }
 @media only screen and (max-width: 991px) {
   .section-2-info .title {
-    font-size: 44px;
-    line-height: 53px;
+    font-size: 36px; /*44 > 36*/
+    line-height: 40px; /*53 > 40*/
   }
 }
 @media (max-width: 575px) {
   .section-2-info .title {
-    font-size: 33px;
-    line-height: 38px;
+    font-size: 33px; /*33 > 28*/
+    line-height: 32px; /*38 > 32*/
   }
 }
 @media only screen and (max-width: 767px) {
