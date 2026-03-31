@@ -7009,7 +7009,7 @@ section {
   line-height: 33px;
   letter-spacing: -0.05em;
   color: #000000;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 991px) {
   .hero-section-3__card .title br {
@@ -7089,7 +7089,7 @@ section {
   display: flex;
   gap: 15px;
   align-items: center;
-  margin-bottom: 57px;
+  margin-bottom: 50px;
 }
 @media (max-width: 575px) {
   .hero-section-3__list-box {
@@ -14059,7 +14059,7 @@ section {
   }
 }
 .service-section-3__card .awards-section-3__heading {
-  margin-bottom: 280px;
+  margin-bottom: 200px;
 }
 @media only screen and (max-width: 991px) {
   .service-section-3__card .awards-section-3__heading {
