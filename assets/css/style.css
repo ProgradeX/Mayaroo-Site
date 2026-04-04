@@ -3895,9 +3895,9 @@ section {
   }
 }
 .footer-area .footer-widget-wrapper-box .content .title {
-  font-size: 90px;
+  font-size: 75px; /*90px > 75px*/
   font-weight: 400;
-  line-height: 85px;
+  line-height: 80px; /*85px > 80px*/
   letter-spacing: -3.5px;
   font-family: var(--font_BDOGrotesk);
   color: var(--primary);
@@ -3948,7 +3948,8 @@ section {
   color: #FF6A3A;
 }
 .dark .footer-area .footer-widget-wrapper-box .content a {
-  color: var(--white);
+  /* color: var(--white); */
+  color: #FF6A3A;
 }
 .footer-area .footer-widget-wrapper-box .content a::before {
   width: 100%;
@@ -3963,7 +3964,8 @@ section {
   color: #FF6A3A;
 }
 .dark .footer-area .footer-widget-wrapper-box .content a::before {
-  color: var(--white);
+  /* color: var(--white); */
+  color: #FF6A3A;
 }
 .footer-area .footer-widget-wrapper-box .content a:hover::before {
   width: 0%;
