@@ -436,7 +436,7 @@ h6 {
 }
 
 /* ===Inverted scss (index 09) === */
-.text-invert > div {
+.text-invert > span {
   background-image: linear-gradient(to right, var(--primary) 50%, #CDC9C6 51%);
   background-size: 200% 100%;
   background-position-x: 100%;
@@ -749,13 +749,17 @@ h6 {
 }
 
 /* === inverted text scss (index 15) === */
-.text-invert > div {
+.text-invert > span {
   background-image: linear-gradient(to right, #fff 50%, rgba(255, 255, 255, 0.4) 50%);
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.text-invert .line {
+  display: block;
 }
 
 /* === rr--hover-img canvas (Home) === */

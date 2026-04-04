@@ -7,23 +7,36 @@
 (function ($) {
   "use strict";
 
-  // Text Invert With Scroll 
-  const split = new SplitText(".text-invert", {
-    type: "lines"
-  });
-  split.lines.forEach((target) => {
+  // // Text Invert With Scroll 
+  // const split = new SplitText(".text-invert", {
+  //   type: "lines"
+  // });
+  // split.lines.forEach((target) => {
+  //   gsap.to(target, {
+  //     backgroundPositionX: 0,
+  //     ease: "none",
+  //     scrollTrigger: {
+  //       trigger: target,
+  //       scrub: 1,
+  //       start: 'top 60%',
+  //       end: "bottom center",
+  //     }
+  //   });
+  // });
+
+  // Text Invert With Scroll
+  gsap.utils.toArray(".text-invert .line").forEach((target) => {
     gsap.to(target, {
       backgroundPositionX: 0,
       ease: "none",
       scrollTrigger: {
         trigger: target,
         scrub: 1,
-        start: 'top 60%',
+        start: "top 60%",
         end: "bottom center",
       }
     });
   });
-
 
 
   // rr_title_anim 
