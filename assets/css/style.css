@@ -6771,21 +6771,21 @@ section {
 }
 
 .hero-section-3__wrapper {
-  padding-top: 210px;
+  padding-top: 50px; /*210 > 50*/
 }
 @media only screen and (max-width: 1199px) {
   .hero-section-3__wrapper {
-    padding-top: 170px;
+    padding-top: 40px; /*170 > 40*/
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-section-3__wrapper {
-    padding-top: 150px;
+    padding-top: 35px; /*150 > 35*/
   }
 }
 @media (max-width: 575px) {
   .hero-section-3__wrapper {
-    padding-top: 130px;
+    padding-top: 30px; /*130 > 30*/
   }
 }
 .hero-section-3__info .title {
@@ -7043,6 +7043,7 @@ section {
   color: #FFFFFF;
 }
 .hero-section-3__card-2 .text { /* new */
+  padding-bottom: 70px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -7096,7 +7097,7 @@ section {
   display: flex;
   gap: 15px;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 @media (max-width: 575px) {
   .hero-section-3__list-box {
