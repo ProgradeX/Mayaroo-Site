@@ -3895,9 +3895,9 @@ section {
   }
 }
 .footer-area .footer-widget-wrapper-box .content .title {
-  font-size: 75px; /*90px > 75px*/
+  font-size: 70px; /*90px > 70px*/
   font-weight: 400;
-  line-height: 80px; /*85px > 80px*/
+  line-height: 75px; /*85px > 75px*/
   letter-spacing: -3.5px;
   font-family: var(--font_BDOGrotesk);
   color: var(--primary);
@@ -3908,33 +3908,33 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .footer-area .footer-widget-wrapper-box .content .title {
-    font-size: 80px;
-    line-height: 85px;
+    font-size: 75px; /*80px > 75px*/
+    line-height: 80px; /*85px > 80px*/
   }
 }
 @media only screen and (max-width: 1399px) {
   .footer-area .footer-widget-wrapper-box .content .title {
-    font-size: 70px;
-    line-height: 74px;
+    font-size: 65px; /*70px > 65px*/
+    line-height: 70px; /*74px > 70px*/
   }
 }
 @media only screen and (max-width: 1199px) {
   .footer-area .footer-widget-wrapper-box .content .title {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 55px; /*60px > 55px*/
+    line-height: 75px; /*70px > 75px*/
   }
 }
 @media only screen and (max-width: 991px) {
   .footer-area .footer-widget-wrapper-box .content .title {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 40px; /*43px > 40px*/
+    line-height: 45px; /*50px > 45px*/
     letter-spacing: 0;
   }
 }
 @media (max-width: 575px) {
   .footer-area .footer-widget-wrapper-box .content .title {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 30px; /*35px > 30px*/
+    line-height: 40px; /*45px > 40px*/
   }
 }
 .footer-area .footer-widget-wrapper-box .content a {
@@ -18043,4 +18043,55 @@ section {
 
 .theme-color {
   color: #FF6A3A !important;
+}
+
+/* portfolio dropdown styles */
+.portfolio-filter-dropdown {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:0 0 36px 12px;
+}
+
+.portfolio-filter-dropdown .label {
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  opacity:0.6;
+}
+
+.portfolio-filter-dropdown .dropdown-container {
+  position:relative;
+  display:inline-block;
+}
+
+.portfolio-filter-dropdown .dropdown-container select {
+  appearance:none;
+  -webkit-appearance:none;
+  background:transparent;
+  border:1px solid currentColor;
+  border-radius:0;
+  padding:10px 40px 10px 16px;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  cursor:pointer;
+  outline:none;
+  color:inherit;
+  min-width:160px;
+}
+
+.dark .dropdown-container select {
+  background: #1A1A1A;
+}
+
+.portfolio-filter-dropdown .dropdown-container .dropdown-arrow {
+  position:absolute;
+  right:14px;
+  top:50%;
+  transform:translateY(-50%);
+  pointer-events:none;
+  font-size:10px;
 }

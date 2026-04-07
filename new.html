@@ -86,7 +86,7 @@
             </div>
             <div class="contact-item">
               <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <span class="text"><a href="mailto:info@mayaroo.com">info@mayaroo.com</a></span>
+              <span class="text"><a href="/cdn-cgi/l/email-protection#4c25222a230c212d352d3e2323622f2321"><span class="__cf_email__" data-cfemail="2c45424a436c414d554d5e4343024f4341">[email&#160;protected]</span></a></span>
             </div>
             <div class="contact-item">
               <span class="icon"><i class="fa-solid fa-phone"></i></span>
@@ -287,21 +287,19 @@
 
         <!-- team-section start -->
         <section class="team-section section-space-bottom">
+        <!-- portfolio filter -->
+        <div id="portfolio-filter-bar" style="display:flex;align-items:center;gap:12px;padding:0 0 36px 0;justify-content:flex-end;">
+          <label for="portfolio-filter" style="font-size:14px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;opacity:0.6;">View</label>
+          <div style="position:relative;display:inline-block;">
+            <select id="portfolio-filter" style="appearance:none;-webkit-appearance:none;background:transparent;border:1px solid currentColor;border-radius:0;padding:10px 40px 10px 16px;font-size:14px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;outline:none;color:inherit;min-width:160px;">
+              <option value="all">All</option>
+              <option value="industries">Industries</option>
+              <option value="projects">Projects</option>
+            </select>
+            <span style="position:absolute;right:14px;top:50%;transform:translateY(-50%);pointer-events:none;font-size:10px;">&#9660;</span>
+          </div>
+        </div>
           <div class="container rr-container-1650">
-            <div class="row">
-              <!-- portfolio filter -->
-              <div id="portfolio-filter-bar" class="portfolio-filter-dropdown">
-                <label for="portfolio-filter" class="label">View</label>
-                <div class="dropdown-container">
-                  <select id="portfolio-filter">
-                    <option value="all">All</option>
-                    <option value="industries">Industries</option>
-                    <option value="projects">Projects</option>
-                  </select>
-                  <span class="dropdown-arrow">&#9660;</span>
-                </div>
-              </div>
-            </div>
             <div class="row" id="portfolio-cards-row">
               <!-- Industries: cards 1–6 -->
               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" data-category="industries">
@@ -655,7 +653,7 @@
               <div class="footer-widget-box">
                 <h2 class="title">Contact</h2>
                 <ul class="footer-nav-list">
-                  <li><a href="mailto:info@mayaroo.com">info@mayaroo.com</a></li>
+                  <li><a href="/cdn-cgi/l/email-protection#94fdfaf2fbd4f9f5edf5e6fbfbbaf7fbf9"><span class="__cf_email__" data-cfemail="bad3d4dcd5fad7dbc3dbc8d5d594d9d5d7">[email&#160;protected]</span></a></li>
                   <li><a href="tel:+923185169107">+92 318 5169107</a></li>
                 </ul>
               </div>
@@ -680,8 +678,28 @@
       <i class="fas fa-moon icon-dark"></i>
     </div>
   </div>
+  <!-- Portfolio Filter Script -->
+  <script>
+    (function () {
+      var select = document.getElementById('portfolio-filter');
+      if (!select) return;
+
+      select.addEventListener('change', function () {
+        var val = this.value;
+        var cards = document.querySelectorAll('#portfolio-cards-row > [data-category]');
+        cards.forEach(function (card) {
+          if (val === 'all' || card.getAttribute('data-category') === val) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    })();
+  </script>
+
   <!-- Dependencies JS Files -->
-  <script src="assets/vandor/jquery/jquery.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vandor/jquery/jquery.js"></script>
   <script src="assets/vandor/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="assets/vandor/popup/jquery.magnific-popup.min.js"></script>
   <script src="assets/vandor/swiper/swiper-bundle.min.js"></script>
@@ -693,16 +711,4 @@
   <script src="assets/vandor/gsap/customEase.js"></script>
   <script src="assets/vandor/menu/jquery.meanmenu.min.js"></script>
   <script src="assets/vandor/backtop/backToTop.js"></script>
-  <script src="assets/vandor/nice-select/nice-select.js"></script>
-  <script src="assets/js/odometer.min.js"></script>
-  <script src="assets/js/vendor/magiccursor.js"></script>
-  <script src="assets/js/vendor/waypoints.min.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/vandor/common-js/common.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <!-- Mayaroo Scripts -->
-  <script src="MayarooAssets/scripts/portfolio.js"></script>
-</body>
-
-</html>
+  <script src="assets/vandor/nice-s
