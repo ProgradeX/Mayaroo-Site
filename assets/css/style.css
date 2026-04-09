@@ -15240,7 +15240,7 @@ section {
 
 .service-page__item {
   display: grid;
-  grid-template-columns: 1fr 620px 500px 140px; /* modified */
+  grid-template-columns: 1fr 300px 500px 140px; /* modified */ /*620> 300*/
   border: 1px solid rgba(17, 17, 17, 0.1);
   padding: 22.5px 0;
   position: relative;
@@ -15253,22 +15253,22 @@ section {
 }
 @media only screen and (max-width: 1919px) {
   .service-page__item {
-    grid-template-columns: 1fr 570px 470px 140px;
+    grid-template-columns: 1fr 300px 470px 140px; /*570> 300*/
   }
 }
 @media only screen and (max-width: 1399px) {
   .service-page__item {
-    grid-template-columns: 1fr 570px 427px 140px;
+    grid-template-columns: 1fr 300px 427px 140px; /*570> 300*/
   }
 }
 @media only screen and (max-width: 1199px) {
   .service-page__item {
-    grid-template-columns: 1fr 570px 310px 110px;
+    grid-template-columns: 1fr 300px 310px 110px; /*570> 300*/
   }
 }
 @media only screen and (max-width: 991px) {
   .service-page__item {
-    grid-template-columns: 1fr 570px 230px 90px;
+    grid-template-columns: 1fr 200px 230px 90px; /*570> 200*/
   }
 }
 @media only screen and (max-width: 767px) {
@@ -15390,7 +15390,7 @@ section {
   gap: 50px;
   position: relative;
   z-index: 2;
-  grid-template-columns: 260px 1fr; /* modified */
+  /* grid-template-columns: 260px 1fr; modified */
 }
 @media only screen and (max-width: 1199px) {
   .service-page__content {
