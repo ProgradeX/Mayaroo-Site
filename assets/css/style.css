@@ -12662,7 +12662,7 @@ section {
 
 .blog-page__inner {
   display: grid;
-  grid-template-columns: 1fr 1015px;
+  grid-template-columns: 1fr 1200px; /*1015px > 1200px*/
   gap: 30px;
 }
 @media only screen and (max-width: 1399px) {
