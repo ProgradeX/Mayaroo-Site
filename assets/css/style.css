@@ -4143,7 +4143,7 @@ section {
   font-weight: 400;
   font-size: 30px;
   line-height: 38px;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
   font-family: var(--font_body);
   position: relative;
 }
@@ -4156,7 +4156,7 @@ section {
   left: 0;
   bottom: 0;
   transition: all 0.5s;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
 }
 .footer-area-4__content a:hover a {
   color: rgba(255, 255, 255, 0.5);
@@ -14350,7 +14350,8 @@ section {
   visibility: visible;
 }
 .service-section-4__item:hover .icon svg {
-  color: var(--white);
+  /* color: var(--white); */
+  display: none;
 }
 .service-section-4__thumb {
   position: relative;
@@ -14391,7 +14392,8 @@ section {
 }
 .service-section-4__thumb .icon svg {
   transition: all 0.3s ease-in-out;
-  color: rgba(255, 255, 255, 0.15);
+  /* color: rgba(255, 255, 255, 0.15); */
+  color: var(--action);
 }
 .service-section-4__thumb .content {
   position: absolute;
@@ -14454,7 +14456,7 @@ section {
   line-height: 30px;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #FF6A3A; /*#FFFFFF > FF6A3A*/
   position: relative;
 }
 .service-section-4__btn a i {
@@ -14472,13 +14474,13 @@ section {
   left: 0;
   bottom: -5px;
   transition: all 0.5s;
-  color: var(--white);
+  color: var(--action); /*white > action*/
 }
 .service-section-4__btn a:hover a {
-  color: var(--white);
+  color: var(--action); /*white > action*/
 }
 .dark .service-section-4__btn a:hover {
-  color: var(--white);
+  color: var(--action); /*white > action*/
 }
 .service-section-4__btn a:hover::before {
   width: 0%;
@@ -18042,7 +18044,7 @@ section {
 }
 
 .theme-color {
-  color: #FF6A3A !important;
+  color: var(--action) !important;
 }
 
 /* portfolio dropdown styles */
